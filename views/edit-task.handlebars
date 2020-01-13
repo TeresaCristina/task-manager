@@ -1,0 +1,66 @@
+<!-- 13 January, 2020
+Teresa Costa -->
+
+<div class="master-tasks-dashboard master-add-form">
+    <form method="POST" action="/tasks/edit-task/{{taskDocument._id}}/?_method=PUT">
+        
+        {{#each errors}}
+            <div class="error">{{this}}</div>
+        {{/each}}
+
+        <div class="title-tasks">
+            <h2 class="list-title">Edit Task</h2>
+        </div>
+
+        <div class="row">
+
+            <!--Description of the task-->
+            <div class="form-fields">
+                <input class="input-normal" type="text" name="title"  value="{{taskDocument.title}}" id="title"> 
+            </div>
+        
+        </div>
+        
+        <div class="row">
+
+            <!--Date of the task-->
+            <div class="form-fields">
+                <input class="input-normal" type="date" name="date" value="{{taskDocument.date}}" id="date">
+            </div>
+
+        </div>
+        
+        <div class="row">
+             <!--Time of the task-->   
+            <div class="form-fields">    
+                <input class="input-normal" type="time" name="time" value="{{taskDocument.time}}" id="time">
+            </div>
+        </div>
+        
+
+
+
+        <div class="row check">
+            <p class="checked-text">Finish today:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{#each endsToday}}
+                    <input type="radio" name="endsToday" value="yes" id="yes"{{this}}>Yes&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="endsToday" value="no" id="no">No
+                {{/each}}
+                {{#each notendsToday}}
+                    <input type="radio" name="endsToday" value="yes" id="yes">Yes&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="endsToday" value="no" id="no"{{this}}>No
+                {{/each}}
+            </p>
+        </div>
+        
+        <div class="button-container">
+            <input class="input-normal" class="button" type="submit" value="Edit Task">
+        </div>
+
+        <div class="link-tasks">
+            <a class="link-title" href="/">Back to Dashbord</a>
+        </div>
+    
+    </form>
+
+</div>

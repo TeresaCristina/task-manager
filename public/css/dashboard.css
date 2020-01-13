@@ -1,0 +1,32 @@
+/*13 January, 2020
+Teresa Costa*/
+
+.master-tasks-dashboard {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 0px 10px;
+    margin: 100px 350px;
+    text-align: center;
+    color:teal;
+}
+.title-tasks{
+    font-size: xx-large;
+    padding: 30px 0px;
+}
+.list-tasks {
+    font-size: normal;
+}
+.link-tasks {
+    padding: 30px 0px;
+}
+.link-title{
+    font-size: large;
+    font-weight: bold;
+    color:teal;
+}
+.task{
+    padding: 5px;
+}
+.text-format{
+    font-weight: bold;
+}

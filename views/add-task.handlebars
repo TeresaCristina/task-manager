@@ -1,0 +1,59 @@
+<!-- 13 January, 2020
+Teresa Costa -->
+
+<div class="master-tasks-dashboard master-add-form">
+    
+    <form class="form-add" name="addproduct-form"  action="/tasks/add-task" method="POST">
+        
+        {{#each error}}
+            <div class="error">{{this}}</div>
+        {{/each}}
+        
+        <div class="title-tasks">
+            <h2 class="list-title">Add A New Task</h2>
+        </div>
+        
+        <div class="row">
+
+            <!--Description of the task-->
+            <div class="form-fields">
+                <input class="input-normal" type="text" name="title" id="title"> 
+            </div>
+        
+        </div>
+        
+        <div class="row">
+
+            <!--Date of the task-->
+            <div class="form-fields">
+                <input class="input-normal" type="date" name="date" id="date">
+            </div>
+        </div>
+        
+        <div class="row">
+
+             <!--Time of the task-->   
+            <div class="form-fields">  
+                <input class="input-normal" type="time" name="time" id="time">
+            </div>
+        
+        </div>
+
+        <div class="row check">
+            <p class="checked-text">Need to finish today?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="endsToday" value="yes" id="yes">Yes&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="endsToday" value="no" id="no">No</p>
+        </div>
+    
+        <div class="button-container">
+            <input class="input-normal" class="button" type="submit" value="Add Task">
+        </div>
+        
+        <div class="link-tasks">
+            <a class="link-title" href="/">Back to Dashbord</a>
+        </div>
+    
+    
+    </form>
+
+</div>

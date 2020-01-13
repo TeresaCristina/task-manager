@@ -1,0 +1,27 @@
+<!-- 13 January, 2020
+Teresa Costa -->
+
+<div class="master-tasks-dashboard">
+    
+    <div class="title-tasks">
+        <h1 class="list-title">My tasks for today</h1>
+    </div>
+
+    <div class="list-tasks">
+        {{#each task}} 
+            <p class="task">
+                {{this.time}}&nbsp;&nbsp;&nbsp;&nbsp;
+                {{this.title}}&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-format">Ends today:  </span>{{this.endsToday}}
+            </p>
+        {{else}}
+            You have no tasks for today!
+        {{/each}}
+    </div>
+    
+    <div class="link-tasks">
+        <a class="link-title" href="/tasks/add-task">Add a Task</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="link-title" href="/list-tasks">Edit a Task</a>
+    </div>
+
+</div>

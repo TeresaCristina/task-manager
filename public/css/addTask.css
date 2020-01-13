@@ -1,0 +1,48 @@
+/*13 January, 2020
+Teresa Costa*/
+
+.master-add-form {
+  padding: 0px 50px
+}
+/*Clear floats after the columns*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-fields {
+  float: left;
+  width: 100%;
+}
+.input-normal {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: Teal;
+}
+input[type=text] {
+  width:100%;
+}
+.button-container{
+  padding: 20px 0px 0px 0px;
+}
+.button{
+  color: teal;
+  font-weight: bold;
+}
+.checked-text{
+  font-size: large;
+}
+.check {
+  padding: 20px 0px 0px 0px;
+}
+.button-delete{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  color: Teal;
+  font-weight: bold;
+}
